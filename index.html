@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoteNow - تصويت مباشر</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- مكتبة الرسم البياني -->
+</head>
+<body>
+    <div class="container">
+        <h1>اختر خيارك وصوت الآن!</h1>
+        <div id="poll-options">
+            <button class="option-btn" data-option="الخيار 1">الخيار 1</button>
+            <button class="option-btn" data-option="الخيار 2">الخيار 2</button>
+            <button class="option-btn" data-option="الخيار 3">الخيار 3</button>
+        </div>
+        <button id="submit-btn" disabled>إرسال التصويت</button>
+        <p id="countdown" class="hidden">يمكنك التصويت بعد <span id="timer">10</span> ثوانٍ</p>
+        <canvas id="voteChart"></canvas> <!-- عنصر الرسم البياني -->
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
